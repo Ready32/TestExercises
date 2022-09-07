@@ -1,0 +1,141 @@
+@md: 970px;
+@ml: 767px;
+@mm: 479px;
+
+.footer {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: @md){
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    &__container { // в символе & находится селектор выше, т.е. будет .header__container
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 93px;
+        margin-bottom: 28px;
+    }
+    &__left-column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 68px;
+        @media (max-width: @md) {
+            gap: 25px;            
+        }
+        @media (max-width: @mm){
+            flex-direction: column;
+            gap: 10px;
+            margin: 0 auto;
+        }
+    }
+    &__right-column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 44px;
+        @media (max-width: @ml){
+            display: none;
+        }
+    }
+    &__logo {
+        width: 26px;
+        height: 26px;
+        background: #5E81FE;
+        border-radius: 50%;
+    }
+    &__social {}
+    &__navigation {}
+    &__button {
+        background-color: #D2E1FF;
+        border-radius: 2px;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        color: #3A79FF;
+        border: none;
+        padding: 1.05em 1.855em;
+        cursor: pointer;
+        &:hover {
+            transition: all .8s ease;
+
+            box-shadow: 0px 10px 10px rgb(201 209 231 / 60%);
+        }
+    }
+
+    &__copyright{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        color: #AEB8D0;
+        margin-left: 99px;
+        margin-bottom: 93px;
+        @media (max-width: @md){
+            margin-left: 55px;
+            margin-bottom: 50px;
+        }
+    }
+
+}
+
+.navigation {
+    &__list {
+        display: flex;
+        gap: 32px;
+        @media (max-width: @ml){
+            gap: 15px;
+        }
+    }
+    &__item {
+        display: block;
+
+
+    }
+    &__link {
+        display: block;
+        padding: 5px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        color: #697CA6;
+        text-shadow: 0px 0px 5px #E6E6E6;
+        text-decoration: none;
+        &:hover {color: #5E81FE;}
+
+        &--active {
+            color: #5E81FE;
+        }
+        @media (max-width: @mm){
+            font-size: 9px;
+        }
+    }
+}
+
+.social {
+    &__list {
+        display: flex;
+        gap: 33px;
+    }
+    &__item {}
+    &__icon {
+        display: block;
+        height: 17px;
+        width: 17px;
+        text-align: center;
+        svg {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+

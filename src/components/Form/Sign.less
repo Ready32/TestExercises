@@ -1,0 +1,118 @@
+@md: 970px;
+@ml: 767px;
+@mm: 479px;
+
+.sign{
+    background: #FCFDFF;
+
+
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        padding-top: 118px;
+        padding-bottom: 119px;
+        @media (max-width: @ml){
+            flex-direction: column;
+            padding-top: 55px;
+            padding-bottom: 55px;
+        }
+        @media (max-width: @mm){
+            gap: 20px;
+        }
+    }
+
+    &__left{
+        display: flex;
+        flex-direction: column;
+        width: 330px;
+        @media (max-width: @ml){
+            text-align: center;
+        }
+        @media (max-width: @mm){
+            width: 300px;
+        }
+    }
+
+    &__header{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: left;
+        color: #3D4F9F;
+        margin-bottom: 18px;
+        @media (max-width: @ml){
+            text-align: center;
+        }
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 27px;
+        letter-spacing: 0.03em;
+        color: #8D96BD;
+        @media (max-width: @mm){
+            width: 300px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+
+    &__right{
+        @media (max-width: @mm){
+            width: 280px;
+        }
+    }
+
+    &__form{
+        display: flex;
+        gap: 14px;
+        @media (max-width: @mm){
+            flex-direction: column;
+        }
+    }
+
+    &__email{
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: #7A85AD;
+        padding: 21px 168px 21px 23px;
+        background: #EFEFF7;
+        border-radius: 5px;
+        border: none;
+    }
+
+    &__primary{
+        background: #4D6CE1;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2);
+        border-radius: 5px;
+        border: none;
+        padding: 20px 62px;
+        &:hover {
+            transition: all .8s ease;
+            background: #A0B4FF;
+            color: #fff;
+            font-weight: 700;
+        }
+        @media (max-width: @md) {
+            padding: 20px 40px;
+        }
+        @media (max-width: @mm){
+            margin: 0 auto;
+            padding: 20px 62px;
+        }
+    }
+}
+            

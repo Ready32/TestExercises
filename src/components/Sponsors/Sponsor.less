@@ -1,0 +1,27 @@
+@md: 970px;
+@ml: 767px;
+@mm: 479px;
+
+.sponsor{
+padding-top: 61px;
+padding-bottom: 61px;
+@media (max-width: @ml){
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+    &__elements{
+        display: flex;
+        justify-content: space-around;
+        @media (max-width: @md) {
+            justify-content: center;
+            gap: 75px;
+    }
+        @media (max-width: @ml) {
+            gap: 20px;
+            justify-content: space-around;
+        }
+}
+    &__logo {
+
+    }
+}

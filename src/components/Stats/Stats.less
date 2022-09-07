@@ -1,0 +1,108 @@
+@md: 970px;
+@ml: 767px;
+@mm: 479px;
+
+.stats {
+    display: flex;
+
+    &__background {
+        @media (max-width: @ml) {
+            height: 265px;
+        }
+        &--left {
+            width: 50%;
+            background: linear-gradient(
+                229.32deg,
+                #6888ff 12.77%,
+                #5e80ff 73.11%
+            );
+        }
+        &--right {
+            width: 50%;
+            background: linear-gradient(
+                101.48deg,
+                #e9efff 41.56%,
+                #e0e9ff 81.53%
+            );
+        }
+    }
+
+    &__left {
+        margin-top: 66px;
+        text-align: right;
+        color: #fff;
+        margin-right: 90px;
+        padding-bottom: 66px;
+        @media (max-width: @ml) {
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+        @media (max-width: @mm) {
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    &__right {
+        margin-top: 66px;
+        text-align: left;
+        color: #5e80ff;
+        margin-left: 90px;
+        padding-bottom: 66px;
+
+        @media (max-width: @ml) {
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        @media (max-width: @mm) {
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    &__header {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 83px;
+        letter-spacing: 0.03em;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        @media (max-width: @ml) {
+            font-size: 32px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        @media (max-width: @mm) {
+            line-height: 50px;
+        }
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0.03em;
+        width: 260px;
+        @media (max-width: @ml) {
+            font-size: 12px;
+            width: 180px;
+        }
+        @media (max-width: @mm) {
+            width: 130px;
+            line-height: 18px;
+        }
+        @media (max-width: @mm) {
+        }
+    }
+
+    &__text_left {
+        margin-left: auto;
+        @media (max-width: @mm) {
+            margin: 0 auto;
+        }
+    }
+}
